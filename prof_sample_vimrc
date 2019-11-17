@@ -1,0 +1,19 @@
+colorscheme murphy
+"set expandtab
+"set copyindent
+"set preserveindent
+"set softtabstop=0
+set shiftwidth=2
+set tabstop=2
+set number
+if &term =~ '256color'
+    " Disable Background Color Erase (BCE) so that color schemes
+    " work properly when Vim is used inside tmux and GNU screen.
+    set t_ut=
+endif
+
+execute pathogen#infect()
+"execute pathogen#infect()
+syntax on
+"filetype plugin indent on
+set mouse=a
